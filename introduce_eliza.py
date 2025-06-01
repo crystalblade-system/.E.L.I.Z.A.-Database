@@ -30,8 +30,7 @@ def add_member(name):
 
 def list_members():
     print("\n🧠 System Member Registry:")
-    cursor.execute("SELECT * FROM 
-members")
+    cursor.execute("SELECT * FROM members")
     for m in cursor.fetchall():
         print(f" • {m[1]}")
 # ========== Sample Usage ==========
